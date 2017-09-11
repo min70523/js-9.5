@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		// 99乘法表
+
+		// 
+		//
+		// document.write('<table border=1 cellspacing=0 cellpadding=10px>')
+		// for(var i=1;i<=9;i++){
+		// 		if(i%2==0){
+		// 			document.write('<tr bgcolor=skyblue align="center">')
+		// 			for(var j=1;j<=i;j++){
+		// 					if(j%2==0){
+		// 						document.write('<td bgcolor=yellowgreen>'+j+'*'+i+'</td>')
+		// 					}else{
+		// 						document.write('<td>'+j+'*'+i+'</td>')
+		// 					}
+		// 	       		}
+		// 			document.write('</tr >')
+		// 		}else{
+		// 			document.write('<tr bgcolor=pink align="center"> ')
+		// 			for(var j=1;j<=i;j++){
+		// 					if(j%2==1){
+		// 						document.write('<td bgcolor=pink>'+j+'*'+i+'</td>')
+		// 					}else{
+		// 						document.write('<td >'+j+'*'+i+'</td>')
+		// 					}
+		// 	       		}
+		// 			document.write('</tr>')
+		// 		}
+		// }	
+		// document.write('</table>')
+		// //星号金字塔         
+		//                             row    a(行)   b(列)   c(空格数)        
+		// 			    *               1      1       1      4
+		// 			  * * *             2      2       3      3
+		// 			* * * * *           3      3       5      2
+		// 		  * * * * * * *         4      4       7      1
+		// 		* * * * * * * * *       5      5       9      0
+		// 		
+		// 		* * * * * * * * *      	6      6       9      0
+		// 		  * * * * * * *         7      7       7      1
+		// 		    * * * * *           8      8       5      2
+		// 		      * * *             9      9       3      3
+		// 		        *              10      10      1      4
+	// 	sanjiao(10); 		        
+	// 	function sanjiao(row){
+	// 	// if(a=row/2){
+	// 	for(var a=1;a<=row;a++){
+			
+	// 		for(var c=1;c<=row-a;c++){
+	// 			document.write('&nbsp;&nbsp;');
+	// 		}			
+	// 		for(var b=1;b<=2*a-1;b++){
+	// 			document.write('&nbsp;*');
+	// 		}			
+	// 		document.write('<br>');			
+	// 	}
+	// 	for(var a=1;a<=row;a++){
+			
+	// 		for(var c=1;c<=a-1;c++){
+	// 			document.write('&nbsp;&nbsp;');
+	// 		}			
+	// 		for(var b=1;b<=(2*row-1)-2*(a-1);b++){
+	// 			document.write('&nbsp;*');
+	// 		}			
+	// 		document.write('<br>');			
+	// 	}
+	// }
+	// }else{
+		// for(var a=6;a<=row;a++){
+			
+		// 		for(var c=1;c<=row-a;c++){
+		// 		document.write('&nbsp;&nbsp;');
+						
+		// 	for(var b=1;b<=2*a-1;b++){
+		// 		document.write('&nbsp;*');
+		// 	}			
+		// 	document.write('<br>');
+		// 	}						
+		// }
+	// }
+		// for(var a=1;a<=row;a--){
+		// 	for(var c=1;c<=row-a;c++){
+		// 		document.write('&nbsp;&nbsp;');
+		// 	}			
+		// 	for(var b=5;b<=2*a+1;b--){
+		// 		document.write('&nbsp;*');
+		// 	}			
+		// 	document.write('<br>');
+		// }
+		//100之内的斐波那契数列
+		//1 1 2 3 5 8 13 21 34 55 89 
+		// shulie(100); 
+		// function shulie(num){
+		// var i=1,j=1;
+		// document.write(i+'&nbsp;',j+'&nbsp;');
+		// for(var k=0;k<=num;){
+		// 	k=i+j;
+		// 	document.write(k+'&nbsp;');
+		// 	i=j;
+		// 	j=k;
+		// }
+		// }
+		 
+		//数组  动态修改长度，存任意数据类型 
+		//最大值    先假定一个最大值，然后依次去比较，如果下一个比MAX大，就赋值给MAX
+		// var arr1=[20,6,5,25,98,654,23,770];
+		// var arr=[20,6,5,2980,98,654,23,770];
+		// arrMax(arr);
+		// function arrMax(arr){
+		// var max=arr[0];
+		// for(var i=0;i<=arr.length;i++){
+		// 	if(max<arr[i]){
+		// 		max=arr[i];
+		// 	}
+		// }
+		// console.log(max);
+		// }
+		// //最小值
+		// var arr=[20,6,5,25,98,654,23];
+		// var arr1=[20,6,0,25,98,654,23];
+		// arrMin(arr);
+		// function arrMin(arr){	
+		// var min=arr[0];
+		// for(var i=0;i<=arr.length;i++){
+		// 	if(min>arr[i]){
+		// 		min=arr[i];
+		// 	}
+		// }
+		// console.log(min);
+		// }
+		//二维数组的最大值
+		// var arr1=[[70,89,100],[60,79,50],[75,20,90]];
+		// var arr=[[70,89,100],[600,79,50],[75,20,90]];
+		// twoarrMax(arr);
+		// function twoarrMax(arr1){		
+		// var max=arr1[0][0];
+		// for(var i=0;i<arr1.length;i++){
+		// 	for(var j=0;j<arr1.length;j++){
+		// 		if(max<arr1[i][j]){
+		// 			max=arr1[i][j];
+		// 		}
+		// 	}
+		// }
+		// console.log(max);
+		// }
+		//数组去空     
+		//1.去空
+		//2.存到新的数组
+		//3.放到新数组的最后面    length=arr[i]
+		// var arr=[1,2,3,,4,5,,6,7,8,,9,,10];
+		// var arr1=[1,2,3,,4,5,,6,,,7,8,,9,,10,11];
+		// arrspace(arr1);
+		// function arrspace(arr){	
+		// var newarr=[];
+		// for(var i=0;i<arr.length;i++){
+		// 		if(arr[i]!=undefined){
+		// 		    newarr[newarr.length]=arr[i];
+		// 	     }			
+		// }
+		// console.log(arr);
+		// console.log(newarr);
+		// }
+		// //数据类型做条件，进行比较
+		// var arr=[1,2,3,,4,5,,6,7,8,,9,,10]
+		// var newarr=[];
+		// for(var i=0;i<arr.length;i++){
+		// 		if((typeof arr[i])!='undefined'){
+		// 		    newarr[newarr.length]=arr[i];
+		// 	     }			
+		// }
+		// console.log(arr);
+		// console.log(newarr);
+		//排序   降序
+		//拿第一个数去和剩下的每一个数比较出最大值，放在第一个位置，然后拿第二个数再去和剩下的每一个数比较出最大值，放在第二个位置...
+		// var arr1=[20,6,5,25,98,654,23,770];
+		// var arr2=[20,6,5,890,98,654,23,770];
+		// arrpaiMax(arr2);
+		// function arrpaiMax(arr){
+		// for(var i=0;i<arr.length;i++){
+		// 	for(var j=i+1;j<arr.length;j++){
+		// 		if(arr[i]<arr[j]){
+		// 		var k=arr[i];
+		// 		arr[i]=arr[j];
+		// 		arr[j]=k;
+		// 	    }
+		// 	}			
+		// }
+		// console.log(arr);
+		// }
+		// //排序   升序
+		// var arr=[20,6,5,25,98,654,23,770];
+		// var arr1=[20,6,5,7,98,2,23,770];
+		// arrpaiMin(arr1);
+		// function arrpaiMin(arr){				
+		// for(var i=0;i<arr.length;i++){
+		// 	for(var j=i+1;j<arr.length;j++){
+		// 		if(arr[i]>arr[j]){
+		// 		var k=arr[i];
+		// 		arr[i]=arr[j];
+		// 		arr[j]=k;
+		// 	    }
+		// 	}			
+		// }
+		// console.log(arr);
+		// }
+		// //while循环    知道循环条件就可以
+		// var i=0;
+		// while(i<=10){
+		// 	console.log(i);
+		// 	i++;
+		// }
+		// //
+		// var 
+		//函数声明方式
+		//基本语法
+		//fn()                  前面后面都可以调用
+		//function fn(){
+		//alert(1);
+		//}
+		//fn();
+		
+		
+		
+		//自变量  字面量  var a=10;
+		//fn();    如果声明之前调用，值为undefined;  报错
+		//var fn=function(){
+		//alert(1);
+		//}
+		//fn();     只能在声明之后调用
+		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
